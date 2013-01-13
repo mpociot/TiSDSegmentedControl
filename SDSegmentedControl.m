@@ -78,6 +78,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     [super removeAllSegments];
 }
 
+
 - (void)commonInit
 {
     // Default height
@@ -586,6 +587,9 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
         _borderBottomLayer.path = borderBottomPath.CGPath;
 
         // Dereference itself to be not executed twice
+        [path release];
+        [shadowPath release];
+        [borderBottomPath release];
         lastCompletionBlock = nil;
     };
 
@@ -841,6 +845,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     {
         [path addLineToPoint:CGPointMake(right, point.y)];
     }
+    [points release];
 }
 
 - (void)handleSelect:(SDSegmentView *)view

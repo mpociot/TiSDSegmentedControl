@@ -14,8 +14,8 @@
 //
 // Adding a framework for a specific version(s) of iPhone:
 //
-// OTHER_LDFLAGS[sdk=iphoneos4*]=$(inherited) -framework Foo
-// OTHER_LDFLAGS[sdk=iphonesimulator4*]=$(inherited) -framework Foo
+OTHER_LDFLAGS[sdk=iphoneos4*]=$(inherited) -framework QuartzCore
+OTHER_LDFLAGS[sdk=iphonesimulator4*]=$(inherited) -framework QuartzCore
 //
 //
 // How to add a compiler define:
