@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: A drop-in remplacement for UISegmentedControl that mimic iOS 6 AppStore tab controls.
+author: Marcel Pociot
+license: MIT License
+copyright: Marcel Pociot - original module Olivier Poitrey, Marius Rackwitz
+
+
+# these should not be edited
+name: TiSDSegmentedControl
+moduleid: de.marcelpociot.sdsegmentedcontrol
+guid: 7d04b072-d237-44a4-a8fe-f6414116178b
+platform: iphone
+minsdk: 3.0.0.GA
